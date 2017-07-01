@@ -6,3 +6,5 @@ renamed
 __pycache__
 originals
 rerun2
+.ipynb_checkpoints
+tmp
