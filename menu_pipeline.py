@@ -5,7 +5,7 @@ from wand.image import Image
 class MenuProcessing(object):
     
     pngquant_cmd = "pngquant --quality=0-20 --speed 1 --ext .png --force "
-    scratch_path = "./tmp/"
+    scratch_path = "/home/ubuntu/ont/tmp/"
 
     food_menu_suffix = "_menu"
     drink_menu_suffix = "_drinks_menu"
@@ -39,7 +39,7 @@ class MenuProcessing(object):
 
         page=convert.sequence[0]
         convert.compression_quality = 70
-        convert.save(filename="." + name[1] +  ".png")
+        convert.save(filename=name[0] +  ".png")
         
 
     
